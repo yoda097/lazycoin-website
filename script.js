@@ -1,1 +1,0 @@
-console.log('Lazy Token Website Loaded');
