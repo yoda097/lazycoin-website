@@ -169,7 +169,7 @@ body {
 }
 
 .logo {
-    height: 40px;  /* Menü yüksekliği ile eşit */
+    height: 40px;  /* Match menu height */
     width: auto;
     display: inline-block;
 }
