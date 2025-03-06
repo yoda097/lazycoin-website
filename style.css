@@ -172,3 +172,16 @@ body {
     margin-right: 10px; /* Menü ikonundan uzaklaştır */
     display: inline-block; /* Menüyle aynı hizada tut */
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
