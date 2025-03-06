@@ -9,14 +9,14 @@
 <body>
 
     <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <ul class="menu">
-            <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
-            <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
-            <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
-            <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
-        </ul>
-    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="menu">
+        <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
+        <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
+        <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
+        <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
+    </ul>
+</nav>
 
     <header>
         <h1>Lazy Token</h1>
@@ -69,6 +69,16 @@
 <div class="mars"></div>
 
 <script>
+    function toggleMenu() {
+        var menu = document.querySelector(".menu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(".menu").style.display = "none"; // Menü tıklandıktan sonra kapanacak
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
         const starContainer = document.getElementById("star-container");
 
