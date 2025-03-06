@@ -108,23 +108,23 @@ body {
 /* Navbar */
 .navbar {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 10px; /* Sayfanın en üstüne sabitle */
+    left: 10px; /* Sol kenara hizala */
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 8px;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Menü ve logoyu sola hizalar */
+    justify-content: flex-start; /* Menü ve logoyu sola hizala */
     width: auto;
+    gap: 10px; /* Menü ve logo arasında boşluk bırak */
 }
 
 .menu-icon {
     width: 40px;
     height: 40px;
     cursor: pointer;
-}
 }
 
 /* Hamburger Menu Icon */
