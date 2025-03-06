@@ -104,3 +104,30 @@ body {
     background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(139,0,0,1) 100%);
     z-index: -1; /* Mars'ı diğer içeriklerin arkasına atar */
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar button {
+    background: #ff4500;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.navbar button:hover {
+    background: #ff6347;
+}
