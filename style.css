@@ -170,7 +170,6 @@ body {
 .logo {
     height: 40px;  /* Menü yüksekliği ile eşit */
     width: auto;
-    margin-left: 10px; /* Menü ile arasında boşluk bırak */
     display: inline-block;
 }
 
