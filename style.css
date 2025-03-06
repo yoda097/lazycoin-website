@@ -55,3 +55,41 @@ a:hover {
     height: 150px;
     background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(139,0,0,1) 100%);
 }
+
+/* Dark space background */
+body {
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Moving stars effect */
+.stars {
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    animation: twinkle 5s infinite;
+    border-radius: 50%;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0; transform: translateY(0); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(100vh); }
+}
+
+/* Mars surface effect */
+.mars {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(139,0,0,1) 100%);
+}
