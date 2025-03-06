@@ -113,7 +113,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 8px;
-    z-index: 1000;
+    z-index: 9999; /* Navbar'ın hep üstte kalmasını sağla */
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Menü ve logoyu sola hizala */
