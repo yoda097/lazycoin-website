@@ -59,7 +59,7 @@ a:hover {
 /* Dark space background */
 body {
     background-color: black;
-    overflow: hidden;
+    overflow-x: hidden; /* Sadece yatay kaydırmayı engeller, dikey kaydırmayı açık bırakır */
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
