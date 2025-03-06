@@ -122,6 +122,10 @@ body {
     justify-content: space-between;
 }
 
+.menu-icon {
+    order: -1; /* Menüyü sola alır */
+}
+
 /* Hamburger Menu Icon */
 .menu-icon {
     font-size: 24px;
