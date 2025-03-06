@@ -155,3 +155,9 @@ body {
     background: #ff4500;
     border-radius: 5px;
 }
+
+.logo {
+    height: 40px; /* Menü yüksekliği ile aynı yap */
+    width: auto; /* Oranları koru */
+    margin-right: 10px; /* Menü ikonundan biraz uzaklaştır */
+}
