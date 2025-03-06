@@ -91,7 +91,7 @@ body {
     transform: translateX(-50%);
     width: 100%;
     height: 150px;
-    background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(139,0,0,1) 100%);
+    background: none; /* Kırmızıyı kaldırır */
 }
 
 .mars {
