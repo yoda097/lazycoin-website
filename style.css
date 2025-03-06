@@ -5,6 +5,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
+    padding-bottom: 60px; /* Footer için boşluk bırak */
 }
 
 header {
