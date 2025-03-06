@@ -9,10 +9,13 @@
 <body>
 
     <nav class="navbar">
-        <button onclick="scrollToSection('tokenomics')">Tokenomics</button>
-        <button onclick="scrollToSection('roadmap')">Roadmap</button>
-        <button onclick="scrollToSection('buy')">How to Buy?</button>
-        <button onclick="scrollToSection('whitepaper')">Whitepaper</button>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
+            <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
+            <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
+            <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
+        </ul>
     </nav>
 
     <header>
@@ -78,23 +81,16 @@
             starContainer.appendChild(star);
         }
     });
-</script>
-
-<script>
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+ <script>
+    function toggleMenu() {
+        var menu = document.querySelector(".menu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const starContainer = document.getElementById("star-container");
-
-        for (let i = 0; i < 100; i++) {
-            let star = document.createElement("div");
-            star.className = "stars";
-            star.style.left = Math.random() * 100 + "vw";
-            star.style.top = Math.random() * 100 + "vh";
-            star.style.animationDuration = Math.random() * 3 + 2 + "s";
-            starContainer.appendChild(star);
-        }
-    });
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(".menu").style.display = "none"; // Menü kapansın
+    }
 </script>
+
+
