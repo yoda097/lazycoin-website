@@ -105,29 +105,53 @@ body {
     z-index: -1; /* Mars'ı diğer içeriklerin arkasına atar */
 }
 
+/* Navbar */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10px;
+    left: 10px;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 1000;
-    display: flex;
-    gap: 10px;
 }
 
-.navbar button {
-    background: #ff4500;
+/* Hamburger Menu Icon */
+.menu-icon {
+    font-size: 24px;
     color: white;
-    border: none;
-    padding: 8px 12px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 5px;
 }
 
-.navbar button:hover {
-    background: #ff6347;
+/* Hidden menu (default state) */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 150px;
+}
+
+/* Menu items */
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+.menu li a:hover {
+    background: #ff4500;
+    border-radius: 5px;
 }
