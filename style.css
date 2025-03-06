@@ -108,17 +108,17 @@ body {
 /* Navbar */
 .navbar {
     position: fixed;
-    top: 10px; /* Sayfanın en üstüne sabitle */
-    left: 10px; /* Sol kenara hizala */
+    top: 10px; /* Stick to the top */
+    left: 10px; /* Stick to the left */
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 8px;
-    z-index: 9999; /* Navbar'ın hep üstte kalmasını sağla */
+    z-index: 10000; /* Ensure it's on top */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Menü ve logoyu sola hizala */
+    justify-content: flex-start; /* Align menu and logo to the left */
     width: auto;
-    gap: 10px; /* Menü ve logo arasında boşluk bırak */
+    gap: 10px; /* Space between menu and logo */
 }
 
 .menu-icon {
