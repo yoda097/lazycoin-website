@@ -116,6 +116,12 @@ body {
     z-index: 1000;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Hamburger Menu Icon */
 .menu-icon {
     font-size: 24px;
