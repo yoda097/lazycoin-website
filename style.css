@@ -1,50 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('mars-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #121212;
     color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
-    overflow-x: hidden;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
 }
 
-.logo {
-    height: 50px;
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.btn {
-    padding: 10px 20px;
-    margin: 10px;
-    background: gold;
-    color: black;
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+a {
+    color: #00bfff;
     text-decoration: none;
-    border-radius: 5px;
 }
 
-.btn:hover {
-    background: orange;
-}
-
-@keyframes starsAnimation {
-    from { background-position: 0 0; }
-    to { background-position: -1000px 1000px; }
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('stars.png') repeat;
-    opacity: 0.4;
-    animation: starsAnimation 60s linear infinite;
+a:hover {
+    text-decoration: underline;
 }
