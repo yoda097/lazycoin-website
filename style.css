@@ -129,7 +129,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: none; /* Menü başlangıçta kapalı */
     background: rgba(0, 0, 0, 0.9);
     border-radius: 8px;
     position: absolute;
@@ -138,7 +138,7 @@ body {
     width: 150px;
 }
 
-/* Menu items */
+/* Menü öğeleri */
 .menu li {
     padding: 10px;
     text-align: center;
