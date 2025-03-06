@@ -157,7 +157,8 @@ body {
 }
 
 .logo {
-    height: 40px; /* Menü yüksekliği ile aynı yap */
-    width: auto; /* Oranları koru */
-    margin-right: 10px; /* Menü ikonundan biraz uzaklaştır */
+    height: 40px; /* Menü yüksekliği kadar ayarla */
+    width: auto;  /* Oranları korusun */
+    margin-right: 10px; /* Menü ikonundan uzaklaştır */
+    display: inline-block; /* Menüyle aynı hizada tut */
 }
