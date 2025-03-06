@@ -121,7 +121,10 @@ body {
 }
 
 .menu-icon {
-    order: -1; /* Menüyü sola alır */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
 }
 
 /* Hamburger Menu Icon */
@@ -165,10 +168,10 @@ body {
 }
 
 .logo {
-    height: 40px; /* Menü yüksekliği kadar ayarla */
-    width: auto;  /* Oranları korusun */
-    margin-right: 10px; /* Menü ikonundan uzaklaştır */
-    display: inline-block; /* Menüyle aynı hizada tut */
+    height: 40px;  /* Menü yüksekliği ile eşit */
+    width: auto;
+    margin-left: 10px; /* Menü ile arasında boşluk bırak */
+    display: inline-block;
 }
 
 footer {
