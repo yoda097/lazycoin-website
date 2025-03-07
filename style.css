@@ -19,9 +19,6 @@ body {
     margin: 0;
     padding: 20px;
     overflow-x: hidden;
-}
-
-body {
     padding-top: 100px; /* Banner yüksekliği kadar boşluk bırak */
 }
 
