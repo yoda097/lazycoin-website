@@ -1,19 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var languageSelect = document.getElementById('language-select');
-    if (languageSelect) {
-        languageSelect.addEventListener('change', function() {
-            alert('Language selection will be implemented soon!');
-        });
-    }
-});
-
+// Toggle Menu Function
 function toggleMenu() {
     var menu = document.querySelector(".menu");
-    if (menu) {
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "flex"; // "block" yerine "flex" kullanarak hizalamayı bozma
-        }
-    }
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 }
+
+// Smooth Scrolling Function
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(".menu").style.display = "none"; // Hide menu after click
+}
+
+// Moving Stars Background Effect
+document.addEventListener("DOMContentLoaded", function() {
+    const starContainer = document.getElementById("star-container");
+
+    for (let i = 0; i < 100; i++) {
+        let star = document.createElement("div");
+        star.className = "stars";
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.animationDuration = Math.random() * 3 + 2 + "s";
+        starContainer.appendChild(star);
+    }
+});
