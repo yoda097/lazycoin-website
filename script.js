@@ -1,7 +1,11 @@
 // Toggle Menu Function
 function toggleMenu() {
     var menu = document.querySelector(".menu");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 }
 
 // Smooth Scrolling Function
