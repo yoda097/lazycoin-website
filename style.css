@@ -212,3 +212,9 @@ h1 {
 .banner-img {
     max-height: 100px; /* Resmin fazla büyük olmamasını sağlar */
 }
+
+@supports not (background-image: url("images/background.webp")) {
+    body {
+        background-image: url("images/background.jpg"); /* Alternatif JPG versiyonu */
+    }
+}
