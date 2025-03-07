@@ -1,1 +1,91 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
 
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5px 15px;
+    border-radius: 0 8px 8px 0;
+    z-index: 10000;
+    gap: 10px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Hidden menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+}
+
+/* Menu items */
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+.menu li a:hover {
+    background: #ff4500;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
