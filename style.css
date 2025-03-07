@@ -1,3 +1,15 @@
+.light-mode {
+    --background-color: white;
+    --text-color: black;
+    --primary-color: #ffcc00;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: white;
+    --primary-color: #ff4500;
+}
+
 /* General Styles */
 body {
     background-color: black;
