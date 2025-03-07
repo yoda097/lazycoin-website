@@ -93,3 +93,26 @@ footer {
     font-size: 14px;
     z-index: 1000;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağlar */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* İçerik alanı sayfa boyutuna göre genişler */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
