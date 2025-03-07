@@ -12,18 +12,23 @@
 
 /* General Styles */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağlar */
+    margin: 0;
+
     background-color: black;
     background-image: url("images/background.png"); /* Arka plan resmi */
-    background-size: contain; /* Resmi tam boyutta tut */
-    background-position: top center; /* Yukarıda ve ortada sabitle */
+    background-size: cover; /* Resmi tam ekran yap */
+    background-position: top center; /* Yukarıda ortala */
     background-attachment: fixed; /* Sayfa kaydırılsa bile sabit kalsın */
     background-repeat: no-repeat; /* Tekrar etmesini engelle */
+
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 20px;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    
 }
 
 /* Navbar */
@@ -120,13 +125,6 @@ footer {
     padding: 10px;
     font-size: 14px;
     z-index: 1000;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağlar */
-    margin: 0;
 }
 
 main {
