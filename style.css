@@ -200,9 +200,14 @@ footer {
 
 #roadmap {
     background-color: #FF8C00; /* Turuncu */
-    color: white;
     padding: 30px;
     border-radius: 10px;
+    margin-top: 150px; /* Mesafeyi artırabilirsiniz */
+}
+
+#roadmap h2 {
+    font-size: 45px; /* Yazı boyutunu büyüt */
+    font-weight: bold;
 }
 
 #buy {
