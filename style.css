@@ -190,7 +190,12 @@ footer {
     color: black;
     padding: 30px;
     border-radius: 10px;
-    margin-top: 100px; /* Mesafeyi artırabilirsiniz */
+    margin-top: 200px; /* Mesafeyi artırabilirsiniz */
+}
+
+#tokenomics h2 {
+    font-size: 32px; /* Yazı boyutunu büyüt */
+    font-weight: bold;
 }
 
 #roadmap {
