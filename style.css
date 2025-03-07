@@ -10,6 +10,14 @@
     --primary-color: #ff4500;
 }
 
+:root {
+    --primary-color: #FFD700; /* Altın Sarısı */
+    --secondary-color: #FF8C00; /* Turuncu */
+    --background-color: #121212; /* Siyah Arka Plan */
+    --text-color: #FFFFFF; /* Beyaz Yazı */
+    --hover-color: #DC143C; /* Kırmızı Hover */
+}
+
 /* General Styles */
 body {
     background-color: black;
