@@ -128,3 +128,31 @@ footer {
     padding: 10px;
     font-size: 14px;
 }
+
+/* İçerik bölümlerinin arasını aç ve büyüt */
+section {
+    margin-bottom: 150px; /* Bölümler arası mesafeyi büyüt */
+    padding: 60px 20px; /* İçeriğin daha geniş ve uzun görünmesini sağlar */
+}
+
+/* Sayfanın minimum yüksekliğini artırarak daha uzun hale getir */
+main {
+    flex: 1;
+    min-height: 150vh; /* Sayfa boyutunu ekran yüksekliğinin 1.5 katı yap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
+footer {
+    position: relative; /* Fixed yerine relative kullan */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px; /* Footer içeriğini genişlet */
+    font-size: 14px;
+}
