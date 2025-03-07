@@ -184,13 +184,16 @@ main {
 /* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
 footer {
     background-image: url('images/mars-background.png'); /* Mars yüzeyi görselini ekleyin */
-    background-size: cover; /* Tüm alanı kaplasın */
+    background-size: cover; /* Tüm alanı kapsasın */
     background-position: center; /* Ortaya hizalansın */
     background-repeat: no-repeat; /* Tekrar etmesin */
+    width: 100vw; /* Tüm ekran genişliğini kapla */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
     color: white; /* Yazılar görünür olsun */
-    padding: 50px 20px; /* Yeterli boşluk bırak */
+    padding: 50px 0; /* Yeterli boşluk bırak */
     text-align: center;
 }
+
 #tokenomics {
     background-color: #FFD700; /* Altın sarısı */
     color: black;
