@@ -11,63 +11,56 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <img src="images/logo.PNG" alt="Lazy Token Logo" class="logo">
+        <img src="images/logo.png" alt="Lazy Token Logo" class="logo">
         <ul class="menu">
-            <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
-            <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
-            <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
-            <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#buy">How to Buy?</a></li>
+            <li><a href="#whitepaper">Whitepaper</a></li>
         </ul>
     </nav>
 
     <!-- Header -->
     <header>
         <h1>Lazy Token</h1>
-        <p>Deflationary Meme Token, Investor-Friendly Model</p>
+        <p class="sub-text">The Future of Decentralized Meme Economy</p>
     </header>
 
-    <!-- Sections -->
-    <section id="tokenomics">
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="card">
         <h2>Tokenomics</h2>
         <p>Total Supply: 1,000,000,000 LZY</p>
-        <p>27.7% burned at launch.</p>
-        <p>21.7% burned after one month.</p>
-        <p>1% auto-burn per transaction (until supply reaches 100M LZY).</p>
-        <p>0% transaction tax.</p>
+        <p>🔥 27.7% burned at launch.</p>
+        <p>🚀 1% auto-burn per transaction.</p>
     </section>
 
-    <section id="roadmap">
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="card">
         <h2>Roadmap</h2>
         <ul>
-            <li>Website and social media accounts launched</li>
-            <li>BSC Mainnet launch</li>
-            <li>Listing on PancakeSwap</li>
-            <li>Applying for CoinMarketCap and CoinGecko</li>
-            <li>Applying for major CEX listings</li>
+            <li>🔹 Website & Social Media Launch</li>
+            <li>🔹 Listing on PancakeSwap</li>
+            <li>🔹 CEX & CoinMarketCap Applications</li>
         </ul>
     </section>
 
-    <section id="buy">
+    <!-- How to Buy Section -->
+    <section id="buy" class="card">
         <h2>How to Buy?</h2>
-        <p>1. Install Metamask or Trust Wallet.</p>
-        <p>2. Connect to Binance Smart Chain (BSC) network.</p>
-        <p>3. Add Lazy Token contract address on PancakeSwap.</p>
-        <p>4. Buy LZY using BNB!</p>
+        <p>1️⃣ Install Metamask or Trust Wallet.</p>
+        <p>2️⃣ Connect to Binance Smart Chain (BSC).</p>
+        <p>3️⃣ Swap BNB for Lazy Token!</p>
     </section>
 
-    <section id="whitepaper">
-        <h2>Whitepaper</h2>
-        <a href="whitepaper.pdf" download>Download Whitepaper</a>
+    <!-- Whitepaper -->
+    <section id="whitepaper" class="whitepaper">
+        <a href="whitepaper.pdf" download>📄 Download Whitepaper</a>
     </section>
 
     <!-- Footer -->
     <footer>
-       <p>© 2025 LazyCoin. All Rights Reserved. | <a href="https://x.com/lazytokenlzy" target="_blank">Follow us on Twitter (X)</a></p>
+        <p>© 2025 LazyToken | <a href="https://x.com/lazytokenlzy">Follow us on Twitter</a></p>
     </footer>
-
-    <!-- Background Effects -->
-    <div id="star-container"></div>
-    <div class="mars"></div>
 
     <script src="script.js"></script>
 </body>
