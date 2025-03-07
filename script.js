@@ -28,3 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    function createStar() {
+        let star = document.createElement("div");
+        star.className = "star";
+        document.body.appendChild(star);
+
+        // Rastgele konum ve renk
+        let size = Math.random() * 3 + 2; // 2px - 5px arası boyut
+        star.style.width = size + "px";
+        star.style.height = size + "px";
+        star.style.left = Math.random() * window.innerWidth + "px";
+        star.style.animationDuration = Math.random() * 5 + 2 + "s";
+        star.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 75%)`; // Renkli yıldızlar
+
+        setTimeout(() => { star.remove(); }, 7000); // Yıldızlar bir süre sonra silinir
+    }
+
+    setInterval(createStar, 300); // Her 300ms'de bir yeni yıldız ekler
+});
