@@ -106,21 +106,23 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     position: fixed;
-    top: 10px; /* Stick to the top */
-    left: 10px; /* Stick to the left */
+    top: 10px; /* Sayfanın en üstüne sabitle */
+    left: 10px; /* Sol kenara hizala */
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 8px;
-    z-index: 10000; /* Ensure it's on top */
+    z-index: 10000; /* Üstte kalmasını sağla */
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align menu and logo to the left */
+    justify-content: flex-start; /* Menü ve logoyu sola hizala */
     width: auto;
-    gap: 10px; /* Space between menu and logo */
+    gap: 10px; /* Menü ve logo arasında boşluk */
 }
 
+/* Menu icon */
 .menu-icon {
     font-size: 24px;
     color: white;
@@ -128,15 +130,14 @@ body {
     padding: 5px;
 }
 
-/* Hamburger Menu Icon */
-.menu-icon {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
+/* Logo */
+.logo {
+    height: 40px;  /* Menü yüksekliğiyle aynı */
+    width: auto;
+    display: inline-block;
 }
 
-/* Hidden menu (default state) */
+/* Menü */
 .menu {
     list-style: none;
     padding: 0;
@@ -150,7 +151,7 @@ body {
     width: 150px;
 }
 
-/* Menü öğeleri */
+/* Menü içeriği */
 .menu li {
     padding: 10px;
     text-align: center;
@@ -166,12 +167,6 @@ body {
 .menu li a:hover {
     background: #ff4500;
     border-radius: 5px;
-}
-
-.logo {
-    height: 40px;  /* Match menu height */
-    width: auto;
-    display: inline-block;
 }
 
 footer {
