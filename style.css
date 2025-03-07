@@ -90,7 +90,7 @@ body {
 
 /* Header alanı çakışmasını engelle */
 header {
-    margin-top: 70px; /* Navbarın üstüne binmesini engeller */
+    margin-top: 150px; /* Navbarın üstüne binmesini engeller */
 }
 /* Footer */
 footer {
