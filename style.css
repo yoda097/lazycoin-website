@@ -144,25 +144,6 @@ main {
     justify-content: space-between;
 }
 
-@keyframes falling-stars {
-    0% {
-        transform: translateY(0) translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) translateX(20px);
-        opacity: 0;
-    }
-}
-
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 5px white;
-    animation: falling-stars linear infinite;
 }
 
 /* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
