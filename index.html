@@ -8,25 +8,25 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <img src="images/logo.PNG" alt="Lazy Token Logo" class="logo">
-    <select id="language-select">
-        <option value="en">English</option>
-        <option value="tr">Türkçe</option>
-    </select>
-    <ul class="menu">
-        <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
-        <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
-        <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
-        <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
-    </ul>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <img src="images/logo.PNG" alt="Lazy Token Logo" class="logo">
+        <ul class="menu">
+            <li><a href="#" onclick="scrollToSection('tokenomics')">Tokenomics</a></li>
+            <li><a href="#" onclick="scrollToSection('roadmap')">Roadmap</a></li>
+            <li><a href="#" onclick="scrollToSection('buy')">How to Buy?</a></li>
+            <li><a href="#" onclick="scrollToSection('whitepaper')">Whitepaper</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
     <header>
         <h1>Lazy Token</h1>
         <p>Deflationary Meme Token, Investor-Friendly Model</p>
     </header>
-    
+
+    <!-- Sections -->
     <section id="tokenomics">
         <h2>Tokenomics</h2>
         <p>Total Supply: 1,000,000,000 LZY</p>
@@ -60,39 +60,15 @@
         <a href="whitepaper.pdf" download>Download Whitepaper</a>
     </section>
 
+    <!-- Footer -->
     <footer>
        <p>© 2025 LazyCoin. All Rights Reserved. | <a href="https://x.com/lazytokenlzy" target="_blank">Follow us on Twitter (X)</a></p>
     </footer>
+
+    <!-- Background Effects -->
+    <div id="star-container"></div>
+    <div class="mars"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<div id="star-container"></div>
-<div class="mars"></div>
-
-<script>
-    function toggleMenu() {
-        var menu = document.querySelector(".menu");
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    }
-
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        document.querySelector(".menu").style.display = "none"; // Menü tıklandıktan sonra kapanacak
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const starContainer = document.getElementById("star-container");
-
-        for (let i = 0; i < 100; i++) {
-            let star = document.createElement("div");
-            star.className = "stars";
-            star.style.left = Math.random() * 100 + "vw";
-            star.style.top = Math.random() * 100 + "vh";
-            star.style.animationDuration = Math.random() * 3 + 2 + "s";
-            starContainer.appendChild(star);
-        }
-    });
-</script>
