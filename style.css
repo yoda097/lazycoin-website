@@ -1,207 +1,71 @@
-.light-mode {
-    --background-color: white;
-    --text-color: black;
-    --primary-color: #ffcc00;
-}
-
-.dark-mode {
-    --background-color: #121212;
+/* Root Colors */
+:root {
+    --primary-color: #FFD700; /* Gold */
+    --secondary-color: #FF8C00; /* Orange */
+    --background-color: black;
     --text-color: white;
-    --primary-color: #ff4500;
 }
 
 /* General Styles */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px;
-    overflow-x: hidden;
 }
 
-/* Navbar */
 /* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Navbar tüm genişliği kaplasın */
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Menü solda, logo sağında olacak */
+    justify-content: space-between;
     background: rgba(0, 0, 0, 0.9);
     padding: 5px 15px;
     z-index: 10000;
 }
 
-/* Menü ve logo hizalaması */
 .menu-icon {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .logo {
     height: 40px;
-    width: auto;
-    margin-left: auto; /* Logoyu sağa kaydır */
     margin-right: 20px;
 }
 
-/* Menü listesi */
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.95);
-    width: 150px;
-    display: none;
-    border-radius: 5px;
+/* Card Sections */
+.card {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
 }
 
-/* Menü içindeki linkler */
-.menu li {
-    padding: 10px;
-    text-align: center;
+/* Whitepaper */
+.whitepaper {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 8px;
-}
-
-.menu li a:hover {
-    background: #ff4500;
-    border-radius: 5px;
-}
-
-/* Header alanı çakışmasını engelle */
-header {
-    margin-top: 150px; /* Navbarın üstüne binmesini engeller */
-}
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
     padding: 10px;
     font-size: 14px;
-    z-index: 1000;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Sayfanın en az ekran yüksekliği kadar olmasını sağlar */
-    margin: 0;
-}
-
-main {
-    flex: 1; /* İçerik alanı sayfa boyutuna göre genişler */
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* İçerik bölümlerinin arasını aç ve büyüt */
-section {
-    margin-bottom: 150px; /* Bölümler arası mesafeyi büyüt */
-    padding: 60px 20px; /* İçeriğin daha geniş ve uzun görünmesini sağlar */
-}
-
-/* Sayfanın minimum yüksekliğini artırarak daha uzun hale getir */
-main {
-    flex: 1;
-    min-height: 150vh; /* Sayfa boyutunu ekran yüksekliğinin 1.5 katı yap */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@keyframes falling-stars {
-    0% {
-        transform: translateY(0) translateX(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) translateX(20px);
-        opacity: 0;
-    }
-}
-
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 5px white;
-    animation: falling-stars linear infinite;
-}
-
-/* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
-footer {
-    position: relative; /* Fixed yerine relative kullan */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 20px; /* Footer içeriğini genişlet */
-    font-size: 14px;
-}
-
-#tokenomics {
-    background-color: #FFD700; /* Altın sarısı */
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-#roadmap {
-    background-color: #FF8C00; /* Turuncu */
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-#buy {
-    background-color: #DC143C; /* Kırmızı */
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-#whitepaper {
-    background-color: #FFFFFF; /* Siyah */
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
 }
