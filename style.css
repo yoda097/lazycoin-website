@@ -10,22 +10,22 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%; /* Navbar tüm genişliği kaplasın */
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Menü solda, logo sağında olacak */
     background: rgba(0, 0, 0, 0.9);
     padding: 5px 15px;
-    border-radius: 0 8px 8px 0;
     z-index: 10000;
-    gap: 10px;
 }
 
-/* Menu Icon */
+/* Menü ve logo hizalaması */
 .menu-icon {
     font-size: 24px;
     color: white;
@@ -37,28 +37,28 @@ body {
     justify-content: center;
 }
 
-/* Logo */
 .logo {
     height: 40px;
     width: auto;
-    display: block;
+    margin-left: auto; /* Logoyu sağa kaydır */
+    margin-right: 20px;
 }
 
-/* Hidden menu */
+/* Menü listesi */
 .menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 8px;
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.95);
     width: 150px;
+    display: none;
+    border-radius: 5px;
 }
 
-/* Menu items */
+/* Menü içindeki linkler */
 .menu li {
     padding: 10px;
     text-align: center;
@@ -76,6 +76,10 @@ body {
     border-radius: 5px;
 }
 
+/* Header alanı çakışmasını engelle */
+header {
+    margin-top: 70px; /* Navbarın üstüne binmesini engeller */
+}
 /* Footer */
 footer {
     position: fixed;
