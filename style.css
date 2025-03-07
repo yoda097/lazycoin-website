@@ -190,11 +190,11 @@ footer {
     color: black;
     padding: 30px;
     border-radius: 10px;
-    margin-top: 180px; /* Mesafeyi artırabilirsiniz */
+    margin-top: 160px; /* Mesafeyi artırabilirsiniz */
 }
 
 #tokenomics h2 {
-    font-size: 64px; /* Yazı boyutunu büyüt */
+    font-size: 45px; /* Yazı boyutunu büyüt */
     font-weight: bold;
 }
 
