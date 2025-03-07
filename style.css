@@ -177,3 +177,31 @@ footer {
     padding: 20px; /* Footer içeriğini genişlet */
     font-size: 14px;
 }
+
+#tokenomics {
+    background-color: #FFD700; /* Altın sarısı */
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#roadmap {
+    background-color: #FF8C00; /* Turuncu */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#buy {
+    background-color: #DC143C; /* Kırmızı */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#whitepaper {
+    background-color: #121212; /* Siyah */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
