@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    padding-top: 100px; /* Banner yüksekliği kadar boşluk bırak */
+}
+
 /* Navbar */
 /* Navbar */
 .navbar {
