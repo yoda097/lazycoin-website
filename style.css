@@ -12,14 +12,6 @@
 
 /* General Styles */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    overflow-x: hidden;
-    padding-top: 150px; /* Banner yüksekliği kadar boşluk bırak */
     background-image: url("images/background.webp"); /* WEBP formatında arka plan */
     background-size: cover;
     background-position: center;
