@@ -13,6 +13,11 @@
 /* General Styles */
 body {
     background-color: black;
+    background-image: url("images/background.png"); /* Arka plan resmi */
+    background-size: contain; /* Resmi tam boyutta tut */
+    background-position: top center; /* Yukarıda ve ortada sabitle */
+    background-attachment: fixed; /* Sayfa kaydırılsa bile sabit kalsın */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
