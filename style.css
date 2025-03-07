@@ -181,3 +181,23 @@ footer {
     font-size: 14px;
     z-index: 1000;
 }
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 35px; /* Küçük ekranlarda daha iyi görünmesi için */
+    {
+
+    .menu {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+    }
