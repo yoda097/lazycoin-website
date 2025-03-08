@@ -287,21 +287,23 @@ nav {
 .buy-lazy-btn {
     background-color: #28a745; /* Yeşil renk */
     color: white;
-    font-size: 14px; /* Daha küçük font */
+    font-size: 14px;
     font-weight: bold;
     padding: 8px 16px; /* Buton boyutu */
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Kenarları daha oval yap */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    right: 6px; /* Hafif sola çek */
-    top: -3px; /* BUTONU YUKARI KALDIR */
+    right: 15px; /* Sağ kenardan uzaklaştır */
+    top: -3px; /* Butonu yukarı kaldır */
+}
 
+/* Hover efekti */
 .buy-lazy-btn:hover {
-    background-color: #218838; /* Hover efekti */
+    background-color: #218838;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
@@ -309,13 +311,14 @@ nav {
 /* Mobil için ayarlamalar */
 @media (max-width: 768px) {
     .logo {
-        width: 40px; /* Küçük ekranlarda logo biraz küçülsün */
+        width: 40px; /* Küçük ekranlarda logo boyutu */
         margin-left: -15px; /* Daha sola kaydır */
     }
 
     .buy-lazy-btn {
-        font-size: 12px; /* Küçük ekranda daha küçük yazı */
-        padding: 6px 12px; /* Küçük buton */
-        right: 0px; /* Daha iyi konumlandırma */
+        font-size: 12px;
+        padding: 6px 12px; /* Mobil için küçük buton */
+        right: 10px; /* Mobilde sağ kenardan biraz uzaklaşsın */
+        top: -2px; /* Mobilde hafif yukarı kaydır */
     }
 }
