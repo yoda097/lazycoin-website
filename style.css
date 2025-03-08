@@ -242,3 +242,26 @@ footer {
     text-transform: uppercase; /* Büyük harf yap */
     letter-spacing: 1px; /* Harfler arasında boşluk ekle */
 }
+
+.buy-lazy-btn {
+    background-color: #28a745; /* Yeşil renk */
+    color: white; /* Beyaz yazı */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.buy-lazy-btn:hover {
+    background-color: #218838; /* Hover efekti (Daha koyu yeşil) */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
