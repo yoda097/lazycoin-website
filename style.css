@@ -295,8 +295,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: black;
-    position: relative; /* Düzenli konumlandırma için */
+    background-color: black !important; /* Tam siyah arka plan */
+    opacity: 1 !important; /* Saydamlık tamamen kalksın */
+    position: relative; /* Düzenli konumlandırma */
 }
 
 /* LOGO'YU Sola Kaydır */
@@ -344,10 +345,4 @@ nav {
         right: 10px; /* Mobilde sağ kenardan biraz uzaklaşsın */
         top: -2px; /* Mobilde hafif yukarı kaydır */
     }
-}
-
-/* Header'ı Tamamen Siyah Yap (Saydamlığı Kaldır) */
-header {
-    background-color: black !important; /* Tam siyah arka plan */
-    opacity: 1 !important; /* Saydamlık tamamen kalksın */
 }
