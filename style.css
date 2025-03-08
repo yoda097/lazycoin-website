@@ -60,11 +60,11 @@ body {
 
 /* Menü ve logo hizalaması */
 .menu-icon {
-    font-size: 28px; /* Hamburger ikonunu büyüt */
+    font-size: 40px; /* Hamburger ikonunu büyüt */
     color: white;
     cursor: pointer;
-    width: 45px; /* Buton genişliğini büyüt */
-    height: 45px; /* Buton yüksekliğini büyüt */
+    width: 50px; /* Buton genişliğini büyüt */
+    height: 60px; /* Buton yüksekliğini büyüt */
     display: flex;
     align-items: center;
     justify-content: center;
