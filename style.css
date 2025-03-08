@@ -416,3 +416,18 @@ nav {
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
+
+.animated-section {
+    opacity: 0;
+    transform: translateX(-100px); /* Soldan gelmesi için */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section:nth-child(even) {
+    transform: translateX(100px); /* Çift sayılı bölümler sağdan gelir */
+}
+
+.animated-section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
