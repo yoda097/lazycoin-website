@@ -297,8 +297,8 @@ nav {
     text-transform: uppercase;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    right: 5px; /* Hafif sola çek */
-    top: -5px; /* BUTONU YUKARI KALDIR */
+    right: 6px; /* Hafif sola çek */
+    top: -3px; /* BUTONU YUKARI KALDIR */
 
 .buy-lazy-btn:hover {
     background-color: #218838; /* Hover efekti */
