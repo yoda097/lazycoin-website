@@ -124,7 +124,7 @@ body {
 /* Mobil İçin Daha Küçük Menü */
 @media (max-width: 768px) {
     .menu {
-        width: 180px; /* Mobilde de biraz daralt */
+        width: 140px; /* Mobilde de biraz daralt */
         padding: 12px;
     }
 
