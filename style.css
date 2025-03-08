@@ -80,35 +80,50 @@ body {
 }
 
 /* Menü listesi */
+/* Menü Açılınca Daha Büyük ve Sol Tarafa Sabit Olsun */
 .menu {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     position: absolute;
-    top: 50px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.95);
-    width: 150px;
-    display: none;
-    border-radius: 5px;
+    top: 60px; /* Header'dan biraz daha aşağıda açılsın */
+    left: 0px; /* Sol kenara sabitle */
+    width: 220px; /* Menü genişliği artırıldı */
+    background: rgba(0, 0, 0, 0.95); /* Daha koyu arka plan */
+    border-radius: 0px 10px 10px 0px; /* Sağ köşeleri yuvarlat */
+    display: none; /* Başlangıçta gizli */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Menü içindeki linkler */
+/* Menü İçindeki Linkler */
 .menu li {
-    padding: 10px;
-    text-align: center;
+    padding: 15px 20px; /* İç boşlukları artır */
+    text-align: left; /* Yazıları sola hizala */
+    font-size: 18px; /* Yazı boyutunu büyüt */
 }
 
-.menu li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 8px;
-}
-
-.menu li a:hover {
-    background: #ff4500;
+/* Menü Hover Efekti */
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+}
+
+/* Menü Açılınca Görünsün */
+.menu-open .menu {
+    display: block;
+}
+
+/* Mobil İçin Daha Büyük Menü */
+@media (max-width: 768px) {
+    .menu {
+        width: 250px; /* Mobilde daha geniş açılması için */
+        padding: 15px;
+    }
+
+    .menu li {
+        font-size: 20px; /* Mobilde yazıları biraz büyüt */
+        padding: 14px 20px;
+    }
 }
 
 /* Header alanı çakışmasını engelle */
