@@ -88,7 +88,7 @@ body {
     position: absolute;
     top: 60px; /* Header'dan biraz daha aşağıda açılsın */
     left: 0px; /* Sol kenara sabitle */
-    width: 220px; /* Menü genişliği artırıldı */
+    width: 180px; /* MENÜ GENİŞLİĞİNİ DARALTILDI */
     background: rgba(0, 0, 0, 0.95); /* Daha koyu arka plan */
     border-radius: 0px 10px 10px 0px; /* Sağ köşeleri yuvarlat */
     display: none; /* Başlangıçta gizli */
@@ -97,13 +97,21 @@ body {
 
 /* Menü İçindeki Linkler */
 .menu li {
-    padding: 15px 20px; /* İç boşlukları artır */
+    padding: 12px 15px; /* İç boşlukları ayarla */
     text-align: left; /* Yazıları sola hizala */
     font-size: 18px; /* Yazı boyutunu büyüt */
 }
 
-/* Menü Hover Efekti */
-.menu li:hover {
+/* Menüdeki Linkleri Beyaz Yap */
+.menu li a {
+    color: white !important; /* Mavi olan linkleri beyaz yap */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Efekti */
+.menu li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
@@ -116,13 +124,13 @@ body {
 /* Mobil İçin Daha Büyük Menü */
 @media (max-width: 768px) {
     .menu {
-        width: 250px; /* Mobilde daha geniş açılması için */
+        width: 200px; /* Mobilde biraz daha geniş açılması için */
         padding: 15px;
     }
 
     .menu li {
-        font-size: 20px; /* Mobilde yazıları biraz büyüt */
-        padding: 14px 20px;
+        font-size: 18px; /* Mobilde yazıları büyüt */
+        padding: 12px 20px;
     }
 }
 
