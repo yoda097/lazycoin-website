@@ -347,3 +347,40 @@ nav {
         top: -2px; /* Mobilde hafif yukarı kaydır */
     }
 }
+
+/* Hamburger Menü İkonu ve X Dönüşümü */
+.menu-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Açılınca X Dönüşümü */
+.menu-open .menu-icon {
+    transform: rotate(180deg);
+}
+
+/* Menü Açılma Animasyonu */
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: -200px; /* Menü başlangıçta gizli */
+    width: 160px;
+    background-color: black !important;
+    opacity: 1 !important;
+    border-radius: 0px 10px 10px 0px;
+    display: block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-in-out; /* Animasyon efekti */
+}
+
+/* Menü Açılınca Görünsün */
+.menu-open .menu {
+    left: 0; /* Menü içeri girsin */
+}
