@@ -346,8 +346,8 @@ nav {
     }
 }
 
-/* Header Arka Planını Tamamen Siyah Yap */
+/* Header'ı Tamamen Siyah Yap (Saydamlığı Kaldır) */
 header {
     background-color: black !important; /* Tam siyah arka plan */
-    opacity: 1; /* Tam saydamlık yok */
+    opacity: 1 !important; /* Saydamlık tamamen kalksın */
 }
