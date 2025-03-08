@@ -80,7 +80,7 @@ body {
 }
 
 /* Menü listesi */
-/* Menü Açılınca Daha Büyük ve Sol Tarafa Sabit Olsun */
+/* Menü Açılınca Daha Küçük ve Sol Tarafa Sabit Olsun */
 .menu {
     list-style: none;
     padding: 10px;
@@ -88,7 +88,7 @@ body {
     position: absolute;
     top: 60px; /* Header'dan biraz daha aşağıda açılsın */
     left: 0px; /* Sol kenara sabitle */
-    width: 30px; /* MENÜ GENİŞLİĞİNİ DARALTILDI */
+    width: 160px; /* MENÜ GENİŞLİĞİNİ DAHA DA DARALT */
     background: rgba(0, 0, 0, 0.95); /* Daha koyu arka plan */
     border-radius: 0px 10px 10px 0px; /* Sağ köşeleri yuvarlat */
     display: none; /* Başlangıçta gizli */
@@ -97,9 +97,9 @@ body {
 
 /* Menü İçindeki Linkler */
 .menu li {
-    padding: 12px 15px; /* İç boşlukları ayarla */
+    padding: 10px 12px; /* İç boşlukları ayarla */
     text-align: left; /* Yazıları sola hizala */
-    font-size: 18px; /* Yazı boyutunu büyüt */
+    font-size: 16px; /* Yazı boyutunu küçült */
 }
 
 /* Menüdeki Linkleri Beyaz Yap */
@@ -121,16 +121,16 @@ body {
     display: block;
 }
 
-/* Mobil İçin Daha Büyük Menü */
+/* Mobil İçin Daha Küçük Menü */
 @media (max-width: 768px) {
     .menu {
-        width: 200px; /* Mobilde biraz daha geniş açılması için */
-        padding: 15px;
+        width: 180px; /* Mobilde de biraz daralt */
+        padding: 12px;
     }
 
     .menu li {
-        font-size: 18px; /* Mobilde yazıları büyüt */
-        padding: 12px 20px;
+        font-size: 16px; /* Mobilde yazıları küçült */
+        padding: 10px 15px;
     }
 }
 
