@@ -345,3 +345,9 @@ nav {
         top: -2px; /* Mobilde hafif yukarı kaydır */
     }
 }
+
+/* Header Arka Planını Tamamen Siyah Yap */
+header {
+    background-color: black !important; /* Tam siyah arka plan */
+    opacity: 1; /* Tam saydamlık yok */
+}
