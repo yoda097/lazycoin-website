@@ -20,3 +20,21 @@ function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     document.querySelector(".menu").style.display = "none"; // Hide menu after click
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".animated-section");
+
+    function checkScroll() {
+        sections.forEach((section) => {
+            const sectionPosition = section.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (sectionPosition < screenPosition) {
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Sayfa yüklenince kontrol et
+});
