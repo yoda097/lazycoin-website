@@ -51,26 +51,27 @@ body {
 
 /* Navbar başlığını ortalamak için */
 .navbar-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
     flex-grow: 1;
     text-align: center;
+    margin-left: 30px; /* Biraz sağa kaydır */
 }
 
 /* Menü ve logo hizalaması */
 .menu-icon {
-    font-size: 100px; /* Hamburger ikonunu büyüt */
+    font-size: 32px; /* Daha büyük hamburger ikonu */
     color: white;
     cursor: pointer;
-    width: 45px; /* Buton genişliğini büyüt */
-    height: 45px; /* Buton yüksekliğini büyüt */
+    width: 50px; /* Buton genişliği */
+    height: 50px; /* Buton yüksekliği */
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 5px; /* SOLA KAYDIR */
-    top: 10px; /* Daha iyi hizalama için yukarı kaydır */
+    left: 15px; /* SOLA KAYDIR */
+    top: 10px; /* Yukarı hizalama */
 }
 
 .logo {
