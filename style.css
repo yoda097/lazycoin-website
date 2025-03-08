@@ -283,8 +283,8 @@ nav {
     margin-left: -10px; /* Sola doğru kaydırma */
 }
 
-/* BUY LAZY Butonu Küçült ve Daha İyi Konumlandır */
-.buy-lazy-btn {
+/* BUY Butonu Küçült ve Daha İyi Konumlandır */
+.buy-btn {
     background-color: #28a745; /* Yeşil renk */
     color: white;
     font-size: 14px;
@@ -302,7 +302,7 @@ nav {
 }
 
 /* Hover efekti */
-.buy-lazy-btn:hover {
+.buy-btn:hover {
     background-color: #218838;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
@@ -315,7 +315,7 @@ nav {
         margin-left: -15px; /* Daha sola kaydır */
     }
 
-    .buy-lazy-btn {
+    .buy-btn {
         font-size: 12px;
         padding: 6px 12px; /* Mobil için küçük buton */
         right: 10px; /* Mobilde sağ kenardan biraz uzaklaşsın */
