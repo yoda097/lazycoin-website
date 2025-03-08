@@ -388,3 +388,31 @@ nav {
 .menu-open .menu {
     left: 0; /* Menü içeri girsin */
 }
+
+/* Animasyon Başlangıç Durumu (Gizli) */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px); /* Başlangıçta aşağıda */
+    transition: all 0.6s ease-in-out;
+}
+
+/* Tokenomics Soldan Gelsin */
+.tokenomics-section {
+    transform: translateX(-100%); /* Başlangıçta sol dışında */
+}
+
+/* Roadmap Sağdan Gelsin */
+.roadmap-section {
+    transform: translateX(100%); /* Başlangıçta sağ dışında */
+}
+
+/* How to Buy Aşağıdan Gelsin */
+.how-to-buy-section {
+    transform: translateY(100%); /* Başlangıçta aşağıda */
+}
+
+/* Görünür Olunca Animasyonu Başlat */
+.animated-section.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
