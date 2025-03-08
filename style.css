@@ -17,14 +17,16 @@ body {
     min-height: 100vh;
     margin: 0;
 
+    margin: 0;
+    padding: 0;
     background-color: black;
     background-image: url("images/background.png"); /* Arka plan resmi */
-    background-size: contain; /* RESİM BOYUTU EKRANA GÖRE AYARLANACAK */
-    background-position: top center; /* Yukarıda ortala */
-    background-attachment: fixed; /* Sayfa kaydırılsa bile sabit kalsın */
+    background-size: cover; /* Resmin ekranı tam kaplamasını sağlar */
+    background-position: top center; /* Yukarıda ortalanmış şekilde konumlandır */
     background-repeat: no-repeat; /* Tekrar etmesini engelle */
-    height: 100vh; /* Üst kısmın yükseklik sınırını belirle */
-
+    height: 100vh; /* Ekran boyutu kadar bir alan kaplasın */
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+        
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
