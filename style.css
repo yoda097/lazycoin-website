@@ -70,7 +70,7 @@ body {
     justify-content: center;
     position: absolute;
     left: 5px; /* SOLA KAYDIR */
-    top: 12px; /* Daha iyi hizalama için yukarı kaydır */
+    top: 10px; /* Daha iyi hizalama için yukarı kaydır */
 }
 
 .logo {
