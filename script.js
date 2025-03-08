@@ -1,10 +1,17 @@
 // Toggle Menu Function
 function toggleMenu() {
     var menu = document.querySelector(".menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
+    var menuIcon = document.querySelector(".menu-icon");
+    var body = document.body;
+
+    // Menüye açılıp kapanma sınıfı ekle/kaldır
+    body.classList.toggle("menu-open");
+
+    // Menü ikonu değiştir (Hamburger ☰ ↔ X ✖)
+    if (body.classList.contains("menu-open")) {
+        menuIcon.innerHTML = "✖"; // X simgesi
     } else {
-        menu.style.display = "block";
+        menuIcon.innerHTML = "☰"; // Hamburger simgesi
     }
 }
 
