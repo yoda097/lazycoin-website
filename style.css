@@ -265,3 +265,57 @@ footer {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
+
+/* NAVBAR - Logo, Başlık ve Buton hizalaması */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    position: relative; /* Düzenli konumlandırma için */
+}
+
+/* LOGO'YU Sola Kaydır */
+.logo {
+    width: 50px; /* Boyut sabit */
+    height: auto;
+    margin-left: -10px; /* Sola doğru kaydırma */
+}
+
+/* BUY LAZY Butonu Küçült ve Daha İyi Konumlandır */
+.buy-lazy-btn {
+    background-color: #28a745; /* Yeşil renk */
+    color: white;
+    font-size: 14px; /* Daha küçük font */
+    font-weight: bold;
+    padding: 8px 16px; /* Butonu küçült */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: 5px; /* Butonu biraz sola çek */
+}
+
+.buy-lazy-btn:hover {
+    background-color: #218838; /* Hover efekti */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Mobil için ayarlamalar */
+@media (max-width: 768px) {
+    .logo {
+        width: 40px; /* Küçük ekranlarda logo biraz küçülsün */
+        margin-left: -15px; /* Daha sola kaydır */
+    }
+
+    .buy-lazy-btn {
+        font-size: 12px; /* Küçük ekranda daha küçük yazı */
+        padding: 6px 12px; /* Küçük buton */
+        right: 0px; /* Daha iyi konumlandırma */
+    }
+}
