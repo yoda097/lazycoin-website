@@ -232,3 +232,13 @@ footer {
     padding: 30px;
     border-radius: 10px;
 }
+
+.hero-text {
+    font-size: 26px; /* Yazıyı büyüt */
+    font-weight: 900; /* Daha kalın yap */
+    color: #FFD700; /* Altın sarısı renk */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); /* Gölgelendirme efekti */
+    text-align: center; /* Ortala */
+    text-transform: uppercase; /* Büyük harf yap */
+    letter-spacing: 1px; /* Harfler arasında boşluk ekle */
+}
