@@ -88,8 +88,9 @@ body {
     position: absolute;
     top: 60px; /* Header'dan biraz daha aşağıda açılsın */
     left: 0px; /* Sol kenara sabitle */
-    width: 160px; /* MENÜ GENİŞLİĞİNİ DAHA DA DARALT */
-    background: rgba(0, 0, 0, 0.95); /* Daha koyu arka plan */
+    width: 160px; /* Menü genişliği */
+    background-color: black !important; /* Tam siyah arka plan */
+    opacity: 1 !important; /* Saydamlığı tamamen kaldır */
     border-radius: 0px 10px 10px 0px; /* Sağ köşeleri yuvarlat */
     display: none; /* Başlangıçta gizli */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
