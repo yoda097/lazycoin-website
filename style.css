@@ -499,9 +499,9 @@ nav {
 }
 
 .mars-container img {
-    width: 100%; /* Küçült ve tam genişlik yap */
-    max-width: 1200px; /* Büyük ekranlarda fazla büyümesin */
-    height: auto; /* Oranları koru */
-    display: block; /* Sayfada hizalama için */
-    margin: 0 auto; /* Ortalamak için */
+    width: 100%; /* Tam ekran genişliği */
+    max-height: 400px; /* Maksimum yüksekliği sınırla */
+    object-fit: cover; /* Resmi kırpmadan sığdır */
+    display: block;
+    margin: 0 auto;
 }
