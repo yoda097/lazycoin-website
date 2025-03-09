@@ -497,3 +497,11 @@ nav {
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     pointer-events: none; /* Diğer elementleri etkilemesin */
 }
+
+.mars-container img {
+    width: 100%; /* Küçült ve tam genişlik yap */
+    max-width: 1200px; /* Büyük ekranlarda fazla büyümesin */
+    height: auto; /* Oranları koru */
+    display: block; /* Sayfada hizalama için */
+    margin: 0 auto; /* Ortalamak için */
+}
