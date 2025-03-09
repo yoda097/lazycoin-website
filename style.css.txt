@@ -1,0 +1,482 @@
+.light-mode {
+    --background-color: white;
+    --text-color: black;
+    --primary-color: #ffcc00;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: white;
+    --primary-color: #ff4500;
+}
+
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(/* ... */); /* Arka plan resmi */
+    background-size: cover; /* Resmin ekranı tam kaplamasını sağlar */
+    background-position: top center; /* Yukarıda ortalanmış şekilde konumlandır */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
+    height: 100vh; /* Ekran boyutu kadar bir alan kaplasın */
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+        
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Navbar tüm genişliği kaplasın */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menüyü sola, logoyu sağa, başlığı ortaya al */
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    z-index: 10000;
+}
+
+/* Navbar başlığını ortalamak için */
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 30px; /* Biraz sağa kaydır */
+}
+
+/* Menü ve logo hizalaması */
+.menu-icon {
+    font-size: 32px; /* Daha büyük hamburger ikonu */
+    color: white;
+    cursor: pointer;
+    width: 50px; /* Buton genişliği */
+    height: 50px; /* Buton yüksekliği */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15px; /* SOLA KAYDIR */
+    top: 10px; /* Yukarı hizalama */
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+    max-width: 100%;
+}
+
+/* Menü listesi */
+/* Menü Açılınca Daha Küçük ve Sol Tarafa Sabit Olsun */
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 60px; /* Header'dan biraz daha aşağıda açılsın */
+    left: 0px; /* Sol kenara sabitle */
+    width: 160px; /* Menü genişliği */
+    background-color: black !important; /* Tam siyah arka plan */
+    opacity: 1 !important; /* Saydamlığı tamamen kaldır */
+    border-radius: 0px 10px 10px 0px; /* Sağ köşeleri yuvarlat */
+    display: none; /* Başlangıçta gizli */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Menü İçindeki Linkler */
+.menu li {
+    padding: 10px 12px; /* İç boşlukları ayarla */
+    text-align: left; /* Yazıları sola hizala */
+    font-size: 16px; /* Yazı boyutunu küçült */
+}
+
+/* Menüdeki Linkleri Beyaz Yap */
+.menu li a {
+    color: white !important; /* Mavi olan linkleri beyaz yap */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Efekti */
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Menü Açılınca Görünsün */
+.menu-open .menu {
+    display: block;
+}
+
+/* Mobil İçin Daha Küçük Menü */
+@media (max-width: 768px) {
+    .menu {
+        width: 140px; /* Mobilde de biraz daralt */
+        padding: 12px;
+    }
+
+    .menu li {
+        font-size: 16px; /* Mobilde yazıları küçült */
+        padding: 10px 15px;
+    }
+}
+
+/* Header alanı çakışmasını engelle */
+header {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Tüm ekranı kaplasın */
+    position: absolute; /* Sayfanın en üstüne sabitle */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* İçeriğin üstte kalmasını sağla */
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+main {
+    flex: 1; /* İçerik alanı sayfa boyutuna göre genişler */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* İçerik bölümlerinin arasını aç ve büyüt */
+section {
+    margin-bottom: 100px; /* Bölümler arasındaki mesafeyi azalt */
+    padding: 40px 10px; /* İçeriğin daha sıkı görünmesini sağla */
+    max-width: 800px; /* Bölümlerin maksimum genişliğini belirle */
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto;
+    border-radius: 10px; /* Köşeleri biraz yuvarla */
+}
+
+/* Sayfanın minimum yüksekliğini artırarak daha uzun hale getir */
+main {
+    flex: 1;
+    min-height: 150vh; /* Sayfa boyutunu ekran yüksekliğinin 1.5 katı yap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes falling-stars {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(20px);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+    animation: falling-stars linear infinite;
+}
+
+/* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
+footer {
+    background-image: url('images/mars-background.png'); /* Mars yüzeyi görselini ekleyin */
+    background-size: cover; /* Tüm alanı kapsasın */
+    background-position: center; /* Ortaya hizalansın */
+    background-repeat: no-repeat; /* Tekrar etmesin */
+    width: 100vw; /* Tüm ekran genişliğini kapla */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
+    color: white; /* Yazılar görünür olsun */
+    padding: 50px 0; /* Yeterli boşluk bırak */
+    text-align: center;
+}
+
+#tokenomics {
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 1300px; /* Mesafeyi artırabilirsiniz */
+}
+
+#tokenomics h2 {
+    font-size: 45px; /* Yazı boyutunu büyüt */
+    font-weight: bold;
+}
+
+#roadmap {
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 150px; /* Mesafeyi artırabilirsiniz */
+}
+
+#roadmap h2 {
+    font-size: 45px; /* Yazı boyutunu büyüt */
+    font-weight: bold;
+}
+
+#buy {
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#whitepaper {
+    background-color: #FFFFFF; /* Beyaz */
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    font-size: 15px; /* Yazıyı büyüt */
+    font-weight: 500; /* Daha kalın yap */
+    color: #FFFFFF; /* Beyaz */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    text-align: center; /* Ortala */
+    text-transform: uppercase; /* Büyük harf yap */
+    letter-spacing: 1px; /* Harfler arasında boşluk */
+    
+    /* Yeni eklemeler */
+    position: absolute;
+    top: 130%; /* Sayfanın ortasına getir */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Kesin olarak ortalar */
+    width: 100%;
+}
+
+.buy-lazy-btn {
+    background-color: #28a745; /* Yeşil renk */
+    color: white; /* Beyaz yazı */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.buy-lazy-btn:hover {
+    background-color: #218838; /* Hover efekti (Daha koyu yeşil) */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* NAVBAR - Logo, Başlık ve Buton hizalaması */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black !important; /* Tam siyah arka plan */
+    opacity: 1 !important; /* Saydamlık tamamen kalksın */
+    position: relative; /* Düzenli konumlandırma */
+}
+
+/* LOGO'YU Sola Kaydır */
+.logo {
+    width: 50px; /* Boyut sabit */
+    height: auto;
+    margin-left: -30px; /* Sola doğru kaydırma */
+}
+
+/* BUY LAZY Butonu Küçült ve Daha İyi Konumlandır */
+.buy-lazy-btn {
+    background-color: #28a745; /* Yeşil renk */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px; /* Buton boyutu */
+    border: none;
+    border-radius: 25px; /* Kenarları daha oval yap */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: 25px; /* Sağ kenardan uzaklaştır */
+    top: -3px; /* Butonu yukarı kaldır */
+}
+
+/* Hover efekti */
+.buy-lazy-btn:hover {
+    background-color: #218838;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Mobil için ayarlamalar */
+@media (max-width: 768px) {
+    .logo {
+        width: 40px; /* Küçük ekranlarda logo boyutu */
+        margin-left: -35px; /* Daha sola kaydır */
+    }
+
+    .buy-lazy-btn {
+        font-size: 12px;
+        padding: 6px 12px; /* Mobil için küçük buton */
+        right: 20px; /* Mobilde sağ kenardan biraz uzaklaşsın */
+        top: -2px; /* Mobilde hafif yukarı kaydır */
+    }
+}
+
+/* Hamburger Menü İkonu ve X Dönüşümü */
+.menu-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Açılınca X Dönüşümü */
+.menu-open .menu-icon {
+    transform: rotate(180deg);
+}
+
+/* Menü Açılma Animasyonu */
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: -200px; /* Menü başlangıçta gizli */
+    width: 160px;
+    background-color: black !important;
+    opacity: 1 !important;
+    border-radius: 0px 10px 10px 0px;
+    display: block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-in-out; /* Animasyon efekti */
+}
+
+/* Menü Açılınca Görünsün */
+.menu-open .menu {
+    left: 0; /* Menü içeri girsin */
+}
+
+/* Animasyon Başlangıç Durumu (Gizli) */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px); /* Başlangıçta aşağıda */
+    transition: all 0.6s ease-in-out;
+}
+
+/* Tokenomics Soldan Gelsin */
+.tokenomics-section {
+    transform: translateX(-100%); /* Başlangıçta sol dışında */
+}
+
+/* Roadmap Sağdan Gelsin */
+.roadmap-section {
+    transform: translateX(100%); /* Başlangıçta sağ dışında */
+}
+
+/* How to Buy Aşağıdan Gelsin */
+.how-to-buy-section {
+    transform: translateY(100%); /* Başlangıçta aşağıda */
+}
+
+/* Görünür Olunca Animasyonu Başlat */
+.animated-section.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.animated-section {
+    opacity: 0;
+    transform: translateX(-100px); /* Soldan gelmesi için */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section:nth-child(even) {
+    transform: translateX(100px); /* Çift sayılı bölümler sağdan gelir */
+}
+
+.animated-section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Arka plan görseli */
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Relative yerine absolute yap */
+    top: 0;
+    left: 0;
+    z-index: -1; /* İçeriğin üstte kalmasını sağlar */
+}
+
+/* Alttan siyah blur efekti */
+.photo-overlay {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.animated-section {
+    max-width: 90%; /* Bölüm genişliğini %90 ile sınırla */
+    margin: 80px auto; /* Ortalamak için */
+    padding: 20px; /* İç boşluk ekle */
+}
