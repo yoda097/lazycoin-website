@@ -304,7 +304,7 @@ footer {
     text-transform: uppercase;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 15px;
 }
 
@@ -329,7 +329,7 @@ nav {
 .logo {
     width: 50px; /* Boyut sabit */
     height: auto;
-    margin-left: -10px; /* Sola doğru kaydırma */
+    margin-left: -20px; /* Sola doğru kaydırma */
 }
 
 /* BUY LAZY Butonu Küçült ve Daha İyi Konumlandır */
