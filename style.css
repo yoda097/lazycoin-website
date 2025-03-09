@@ -141,8 +141,14 @@ body {
 
 /* Header alanı çakışmasını engelle */
 header {
-    margin-top: 150px; /* Navbarın üstüne binmesini engeller */
+    background-image: url('images/background.png'); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Resmin yüksekliğini ayarla */
+    position: relative;
+    margin-top: 150px; /* Navbar ile çakışmayı önlemek için */
 }
+
 /* Footer */
 footer {
     position: fixed;
