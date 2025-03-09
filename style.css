@@ -141,12 +141,15 @@ body {
 
 /* Header alanı çakışmasını engelle */
 header {
-    background-image: url('images/background.png'); /* Arka plan resmi */
+    background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    height: 400px; /* Resmin yüksekliğini ayarla */
-    position: relative;
-    margin-top: 150px; /* Navbar ile çakışmayı önlemek için */
+    height: 100vh; /* Tüm ekranı kaplasın */
+    position: absolute; /* Sayfanın en üstüne sabitle */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* İçeriğin üstte kalmasını sağla */
 }
 
 /* Footer */
@@ -445,7 +448,10 @@ nav {
     background-image: url("images/background.png");
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: absolute; /* Relative yerine absolute yap */
+    top: 0;
+    left: 0;
+    z-index: -1; /* İçeriğin üstte kalmasını sağlar */
 }
 
 /* Alttan siyah blur efekti */
