@@ -440,11 +440,10 @@ nav {
 
 .photo-overlay {
     width: 100%;
-    height: 150px; /* Efektin yüksekliğini ayarla */
+    height: 150px; /* Blur efekti yüksekliği */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-    position: fixed; /* Sayfanın içine girmemesi için */
-    top: 100%; /* Sayfanın en altına değil, fotoğrafın altına hizala */
+    position: absolute;
+    bottom: 0;
     left: 0;
-    z-index: 3; /* Diğer içeriklerin üstünde durması için */
 }
 
