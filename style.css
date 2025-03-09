@@ -346,7 +346,7 @@ nav {
     text-transform: uppercase;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    right: 15px; /* Sağ kenardan uzaklaştır */
+    right: 20px; /* Sağ kenardan uzaklaştır */
     top: -3px; /* Butonu yukarı kaldır */
 }
 
@@ -361,13 +361,13 @@ nav {
 @media (max-width: 768px) {
     .logo {
         width: 40px; /* Küçük ekranlarda logo boyutu */
-        margin-left: -15px; /* Daha sola kaydır */
+        margin-left: -20px; /* Daha sola kaydır */
     }
 
     .buy-lazy-btn {
         font-size: 12px;
         padding: 6px 12px; /* Mobil için küçük buton */
-        right: 10px; /* Mobilde sağ kenardan biraz uzaklaşsın */
+        right: 15px; /* Mobilde sağ kenardan biraz uzaklaşsın */
         top: -2px; /* Mobilde hafif yukarı kaydır */
     }
 }
