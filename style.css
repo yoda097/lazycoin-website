@@ -482,7 +482,9 @@ nav {
 }
 
 .mars-container {
-    position: relative; /* İçeriklerin doğru konumlanması için */
+    position: absolute;  /* Footer ile birleşmesi için */
+    bottom: 0;  /* Sayfanın en altına sabitle */
+    left: 0;
     width: 100%;
     height: auto;
 }
@@ -499,9 +501,7 @@ nav {
 }
 
 .mars-container img {
-    width: 100%; /* Tam ekran genişliği */
-    max-height: 400px; /* Maksimum yüksekliği sınırla */
-    object-fit: cover; /* Resmi kırpmadan sığdır */
+    width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto;
 }
