@@ -477,6 +477,6 @@ nav {
 
 .animated-section {
     max-width: 90%; /* Bölüm genişliğini %90 ile sınırla */
-    margin: 50px auto; /* Ortalamak için */
+    margin: 80px auto; /* Ortalamak için */
     padding: 20px; /* İç boşluk ekle */
 }
