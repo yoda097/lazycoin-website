@@ -236,7 +236,7 @@ footer {
 }
 
 #tokenomics {
-    background-color: #FFD700; /* Altın sarısı */
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
     color: black;
     padding: 30px;
     border-radius: 10px;
