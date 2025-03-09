@@ -184,8 +184,12 @@ footer {
 
 /* İçerik bölümlerinin arasını aç ve büyüt */
 section {
-    margin-bottom: 150px; /* Bölümler arası mesafeyi büyüt */
-    padding: 60px 20px; /* İçeriğin daha geniş ve uzun görünmesini sağlar */
+    margin-bottom: 100px; /* Bölümler arasındaki mesafeyi azalt */
+    padding: 40px 10px; /* İçeriğin daha sıkı görünmesini sağla */
+    max-width: 800px; /* Bölümlerin maksimum genişliğini belirle */
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto;
+    border-radius: 10px; /* Köşeleri biraz yuvarla */
 }
 
 /* Sayfanın minimum yüksekliğini artırarak daha uzun hale getir */
