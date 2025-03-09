@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url("images/background.png"); /* Arka plan resmi */
+    background-image: url(/* ... */); /* Arka plan resmi */
     background-size: cover; /* Resmin ekranı tam kaplamasını sağlar */
     background-position: top center; /* Yukarıda ortalanmış şekilde konumlandır */
     background-repeat: no-repeat; /* Tekrar etmesini engelle */
