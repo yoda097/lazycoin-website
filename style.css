@@ -224,14 +224,14 @@ main {
 
 /* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
 footer {
-    background-image: url(/* */); /* Mars yüzeyi görselini ekleyin */
-    background-size: cover; /* Tüm alanı kapsasın */
-    background-position: center; /* Ortaya hizalansın */
-    background-repeat: no-repeat; /* Tekrar etmesin */
-    width: 100vw; /* Tüm ekran genişliğini kapla */
-    height: auto; /* Yüksekliği içeriğe göre ayarla */
-    color: white; /* Yazılar görünür olsun */
-    padding: 50px 0; /* Yeterli boşluk bırak */
+    background-image: url(/* */);
+    background-size: contain; /* Tüm resmi göster ama fazla büyütme */
+    background-position: center bottom; /* Ortala ve en alta hizala */
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 300px; /* Daha küçük bir yükseklik ver */
+    color: white;
+    padding: 20px 0; /* Daha az boşluk bırak */
     text-align: center;
 }
 
