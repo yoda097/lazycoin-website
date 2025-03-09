@@ -249,7 +249,7 @@ footer {
 }
 
 #roadmap {
-    background-color: #FF8C00; /* Turuncu */
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
     padding: 30px;
     border-radius: 10px;
     margin-top: 150px; /* Mesafeyi artırabilirsiniz */
@@ -261,7 +261,7 @@ footer {
 }
 
 #buy {
-    background-color: #DC143C; /* Kırmızı */
+    background: linear-gradient(to right, #D97706, #FACC15); /* Altın - Turuncu geçişi */
     color: white;
     padding: 30px;
     border-radius: 10px;
