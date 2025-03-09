@@ -482,11 +482,12 @@ nav {
 }
 
 .mars-container {
-    position: absolute;  /* Footer ile birleşmesi için */
-    bottom: 0;  /* Sayfanın en altına sabitle */
+    position: fixed;  /* Ekranın altına sabitle */
+    bottom: 0;  /* Sayfanın en altına koy */
     left: 0;
     width: 100%;
     height: auto;
+    z-index: -1;  /* Arka planda kalmasını sağla */
 }
 
 .mars-container::after {
