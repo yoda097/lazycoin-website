@@ -329,7 +329,7 @@ nav {
 .logo {
     width: 50px; /* Boyut sabit */
     height: auto;
-    margin-left: -20px; /* Sola doğru kaydırma */
+    margin-left: -25px; /* Sola doğru kaydırma */
 }
 
 /* BUY LAZY Butonu Küçült ve Daha İyi Konumlandır */
@@ -361,7 +361,7 @@ nav {
 @media (max-width: 768px) {
     .logo {
         width: 40px; /* Küçük ekranlarda logo boyutu */
-        margin-left: -25px; /* Daha sola kaydır */
+        margin-left: -30px; /* Daha sola kaydır */
     }
 
     .buy-lazy-btn {
