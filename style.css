@@ -271,8 +271,8 @@ footer {
 }
 
 .hero-text {
-    font-size: 26px; /* Yazıyı büyüt */
-    font-weight: 900; /* Daha kalın yap */
+    font-size: 20px; /* Yazıyı büyüt */
+    font-weight: 700; /* Daha kalın yap */
     color: #FFFFFF; /* Beyaz */
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); /* Gölgelendirme efekti */
     text-align: center; /* Ortala */
