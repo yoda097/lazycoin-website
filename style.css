@@ -224,7 +224,7 @@ main {
 
 /* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
 footer {
-    background-image: url(mars-background.png); /* Mars yüzeyi görselini ekleyin */
+    background-image: url('images/mars-background.png'); /* Mars yüzeyi görselini ekleyin */
     background-size: cover; /* Tüm alanı kapsasın */
     background-position: center; /* Ortaya hizalansın */
     background-repeat: no-repeat; /* Tekrar etmesin */
