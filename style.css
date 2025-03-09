@@ -274,10 +274,17 @@ footer {
     font-size: 20px; /* Yazıyı büyüt */
     font-weight: 700; /* Daha kalın yap */
     color: #FFFFFF; /* Beyaz */
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); /* Gölgelendirme efekti */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
     text-align: center; /* Ortala */
     text-transform: uppercase; /* Büyük harf yap */
-    letter-spacing: 1px; /* Harfler arasında boşluk ekle */
+    letter-spacing: 1px; /* Harfler arasında boşluk */
+    
+    /* Yeni eklemeler */
+    position: absolute;
+    top: 50%; /* Sayfanın ortasına getir */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Kesin olarak ortalar */
+    width: 100%;
 }
 
 .buy-lazy-btn {
