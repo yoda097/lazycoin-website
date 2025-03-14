@@ -240,7 +240,7 @@ footer {
     color: white;
     padding: 30px;
     border-radius: 10px;
-    margin-top: 800px; /* Mesafeyi artırabilirsiniz */
+    margin-top: 400px; /* Mesafeyi artırabilirsiniz */
 }
 
 #tokenomics h2 {
@@ -492,6 +492,8 @@ nav {
     padding: 20px;
     width: 90%;
     max-width: 800px;
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto;
 }
 
 /* Grafik ile Tokenomics arasındaki mesafeyi kontrol etmek için */
@@ -508,5 +510,7 @@ nav {
     margin-bottom: 5px; /* Grafikle arasındaki boşluğu düzenle */
     width: 90%;
     max-width: 800px;
+    margin-left: auto; /* Ortalamak için */
+    margin-right: auto;
 }
 
