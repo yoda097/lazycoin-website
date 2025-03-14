@@ -486,7 +486,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px; /* Grafiği aşağı kaydır */
+    margin-top: 50px; /* Grafiği aşağı çekmek için artır */
     padding: 20px;
     width: 90%;
     max-width: 800px;
@@ -496,13 +496,13 @@ nav {
 .price-chart-announcement {
     background-color: #ffcc00;
     color: #000;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 80px; /* Bunu artırarak aşağı çekebilirsin */
-    margin-bottom: 20px; /* Alt boşluğu ayarla */
+    margin-top: 100px; /* Bildirimi aşağı kaydırmak için artırabilirsin */
+    margin-bottom: 20px; /* Grafikle arasındaki boşluğu düzenle */
     width: 90%;
     max-width: 800px;
 }
