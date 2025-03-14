@@ -486,6 +486,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative; /* Sayfa ile doğru konumlanmasını sağlar */
     margin-top: 80px; /* Grafiği daha aşağı kaydır */
     padding: 20px;
     width: 90%;
@@ -501,8 +502,10 @@ nav {
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 150px; /* Bildirimi daha aşağı kaydır */
-    margin-bottom: 20px;
+    position: relative; /* Eğer üstte sıkışıyorsa, sayfaya göre konumlandır */
+    margin-top: 120px; /* Daha fazla boşluk bırak */
+    margin-bottom: 30px; /* Grafikle arasındaki boşluğu düzenle */
     width: 90%;
     max-width: 800px;
 }
+
