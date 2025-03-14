@@ -487,11 +487,11 @@ nav {
     align-items: center;
     flex-direction: column;
     position: relative; /* Sayfa ile doğru konumlanmasını sağlar */
-    margin-top: 200px; /* Grafiği daha aşağı kaydır */
+    margin-top: 100px; /* Grafiği daha aşağı kaydır */
     margin-bottom: 5px; /* Grafikle arasındaki boşluğu düzenle */
     padding: 20px;
     width: 90%;
-    max-width: 200px;
+    max-width: 800px;
     margin-left: auto; /* Ortalamak için */
     margin-right: auto;
 }
