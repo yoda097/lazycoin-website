@@ -503,7 +503,7 @@ nav {
     font-size: 16px;
     border-radius: 5px;
     position: relative; /* Eğer üstte sıkışıyorsa, sayfaya göre konumlandır */
-    margin-top: 1000px; /* Daha fazla boşluk bırak */
+    margin-top: 1500px; /* Daha fazla boşluk bırak */
     margin-bottom: 30px; /* Grafikle arasındaki boşluğu düzenle */
     width: 90%;
     max-width: 800px;
