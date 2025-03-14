@@ -498,7 +498,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px auto; /* Grafiği biraz aşağı çeker */
+    margin-top: 100px; /* Bunu artırarak grafiği aşağı kaydırabilirsin */
     padding: 20px;
     width: 90%;
     max-width: 800px;
