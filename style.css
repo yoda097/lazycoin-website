@@ -480,3 +480,12 @@ nav {
     margin: 80px auto; /* Ortalamak için */
     padding: 20px; /* İç boşluk ekle */
 }
+
+.crypto-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%; /* Genişliği %90 yap, böylece çok büyük olmaz */
+    max-width: 800px; /* Maksimum genişlik belirle */
+}
