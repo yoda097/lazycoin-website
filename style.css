@@ -483,10 +483,10 @@ nav {
 
 .crypto-chart-container {
     display: flex;
-    justify-content: center; /* Ortada tut */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px auto; /* Üstten 30px boşluk bırak */
+    margin-top: 120px; /* Grafiği aşağı kaydır */
     padding: 20px;
     width: 90%;
     max-width: 800px;
@@ -501,8 +501,8 @@ nav {
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 20px; /* Bunu artırarak grafiği aşağı kaydırabilirsin */
-    margin-bottom: 20px; /* Tokenomics ile mesafeyi azalt */
+    margin-top: 80px; /* Bunu artırarak aşağı çekebilirsin */
+    margin-bottom: 20px; /* Alt boşluğu ayarla */
     width: 90%;
     max-width: 800px;
 }
