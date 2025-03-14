@@ -483,16 +483,16 @@ nav {
 
 .crypto-chart-container {
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
+    justify-content: center; /* Ortada tut */
     align-items: center;
-    flex-direction: column; /* Üst üste hizalama */
-    margin: 50px auto; /* Boşluğu kontrol et */
+    flex-direction: column;
+    margin: 30px auto; /* Üstten 30px boşluk bırak */
     padding: 20px;
     width: 90%;
     max-width: 800px;
 }
 
-/* Grafik ile Tokenomics arasındaki mesafeyi azaltalım */
+/* Grafik ile Tokenomics arasındaki mesafeyi kontrol etmek için */
 .price-chart-announcement {
     background-color: #ffcc00;
     color: #000;
@@ -501,7 +501,8 @@ nav {
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin: 20px auto; /* Boşluğu düşürdük */
+    margin-top: 20px; /* Bunu artırarak grafiği aşağı kaydırabilirsin */
+    margin-bottom: 20px; /* Tokenomics ile mesafeyi azalt */
     width: 90%;
     max-width: 800px;
 }
