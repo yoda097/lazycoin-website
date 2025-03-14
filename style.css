@@ -491,7 +491,7 @@ nav {
     margin-bottom: 5px; /* Grafikle arasındaki boşluğu düzenle */
     padding: 20px;
     width: 90%;
-    max-width: 400px;
+    max-width: 200px;
     margin-left: auto; /* Ortalamak için */
     margin-right: auto;
 }
