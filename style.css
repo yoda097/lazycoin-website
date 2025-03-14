@@ -474,7 +474,7 @@ nav {
     align-items: center;
     flex-direction: column;
     position: relative; /* Sayfa ile doğru konumlanmasını sağlar */
-    margin-top: 70px; /* Grafiği daha aşağı kaydır */
+    margin-top: 30px; /* Grafiği daha aşağı kaydır */
     margin-bottom: 5px; /* Grafikle arasındaki boşluğu düzenle */
     padding: 20px;
     width: 90%;
