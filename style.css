@@ -199,16 +199,6 @@ main {
     }
 }
 
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 5px white;
-    animation: falling-stars linear infinite;
-}
-
 /* Footer'ı her zaman aşağıda tut ama içeriği ittirerek genişlet */
 footer {
     background-image: url('images/mars-background.png'); /* Mars yüzeyi görselini ekleyin */
